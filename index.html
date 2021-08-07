@@ -1,22 +1,233 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <title>
+    NLP Reading Group, Dhaka
+  </title>
+  <meta name="description" content="A Dhaka based Reading Group for Natural Language Processing and Deep Learning Research" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  <link rel="stylesheet" href="/assets/css/main.css?t=1628003444" />
+
+  <link rel="preload" as="font" href="/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" as="font" href="/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="prefetch" as="image" href="/assets/icons/live.svg" type="image/svg+xml" crossorigin="anonymous" />
+  <link rel="prefetch" as="fetch" href="/assets/js/data.json" type="application/json" crossorigin="anonymous" />
+</head>
+
+<body class="pb-4">
+  <header>
+    <!-- navigation bar (web only): --><nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+  <div class="container">
+
+    <a class="navbar-brand" href="/">NLP Reading Group, Dhaka</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+            <li class="nav-item "><a class="nav-link" href="/program/" title="Program">
+                Program
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/talks/" title="Talks">
+                Talks
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/speakers/" title="Speakers">
+                Speakers
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/location/" title="Location">
+                Location
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Previous Editions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown4">
+                  <a class="disabled dropdown-item" href="#">
+                    2022 (current)
+                  </a>
+                  <a class="dropdown-item" href="http://neutron.physics.ncsu.edu/NeutronSummerSchool/" title="2018 (NCSU)">
+                    2018 (NCSU)
+                  </a>
+                  <a class="dropdown-item" href="http://www.phys.utk.edu/neutron-summer-school/" title="2015 (UTK)">
+                    2015 (UTK)
+                  </a>
+              </div>
+            </li>
+      </ul>
+    </div>
+      <div class="navbar-brand navbar-logo mr-0 w-25 text-right overflow-hidden">
+        <a href="">
+            NLP & ML
+        </a>
+      </div>
+
+  </div>
+</nav></header>
+  <main class="container">
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <h4 class="alert-heading">Registration open for Fall 2021 reading sessions!</h4>
+
+        <p>The fall course will build on top of summer readings. We plan to host more advanced research discussions in natural
+language processing and its subsequent fields. We have now prepared a course including 15 nlp papers,
+4 hands-on tutorials, and 2 lightning sessions.</p>
+
+<hr />
+
+<p>Register here - <a href="https://forms.gle/F1VVMUGfqhZxHwALA">https://forms.gle/F1VVMUGfqhZxHwALA</a></p>
+
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+  <div class="jumbotron">
+    <h1 class="display-3">
+      
+        NLP Reading Group, Dhaka
+      
+    </h1>
+    
+      <p class="lead">
+        <p class="lead">A Dhaka based Reading Group for Natural Language Processing and Deep Learning Research</p>
+
+      </p>
+    
+
+    <hr class="my-4">
+
+    <p>An advanced course on natural language processing. 
+This reading list focuses on state-of-the-art NLP research. 
+We will cover 15 research papers and 4 hands-on-tutorials for ~4 months starting from the first week of August 2021. 
+An introductory reading can be found in our previous season <a href="https://docs.google.com/document/d/e/2PACX-1vRia76U_JQwpLgGoQRH2mQHJewl1kJcXKiOib81ga3WS6vFkQUucRLwtGI_rUSxQqtett1h2z0cJetl/pub">NLPSu21</a>.</p>
+
+<h4 id="reflection-from-summer-reading">Reflection from summer reading</h4>
+<p>We received 135 registrations for the summer season. Quoting the numbers, 12 participants joined each week’s session on average. Though the number may seem negligible, we believe it is a good start. We will continue for fall reading with a focus on more in-depth discussion on NLP research. Topics include language understanding, generation, QA, and summarization. Our goal is not to encourage everyone to do ML. Instead, we are focusing on building a space where you can see if ML research fits you. Research is hard! Doing research work with limited resources is nearly impossible. We can keep trying to bridge the gap in between.</p>
+
+<h4 id="why-nlp-reading-goals-and-prospects">Why NLP Reading; goals and prospects</h4>
+<p>Given the momentum of ML taking over the world, it is obvious we join this exciting technological endeavor for the future. Our end goal as a reading group is to carry out genuine and constructive discussions on natural language processing research and its subsequent fields. A long-term optimistic view would be seeing an increase in publications at prestigious ML/ACL venues. We also look forward to initiating a good research mentorship for resource-lean people. A reading group with its current organization can do a little. We believe there will be timely opportunities when we can do more than just reading papers each week. For this season, we are adding a few hands-on tutorials. An extension along this line would be adding coding sessions within a subgroup parallel to reading sessions. That could possibly be explored in future iterations.</p>
+
+
+
+    
+      <div class="lead d-print-none">
+      
+      
+
+        
+          
+          
+          <a class="btn btn-outline-primary btn-lg mt-2 ml-1" href="/program/" title="Program">
+            Program
+          </a>
+        
+      
+
+        
+          
+          
+          <a class="btn btn-outline-primary btn-lg mt-2 ml-1" href="/location/" title="How to get there">
+            How to get there
+          </a>
+        
+      
+
+        
+          
+          
+          <a class="btn btn-outline-primary btn-lg mt-2 ml-1" href="https://forms.gle/F1VVMUGfqhZxHwALA" title="Registration">
+            Registration
+          </a>
+        
+      
+      </p>
+    
+
+  </div>
+
+
+  </main>
+  <footer class="container"></footer><div class="modal fade" id="link-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="link-modal-label">
+          <h3 class="mb-2 font-weight-light"></h3>
+          <h5 class="mb-0 font-weight-light"></h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="stream-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Live Stream
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" frameborder="none" allowfullscreen="allowfullscreen" seamless="seamless" scrolling="no"></iframe>
+        <div id="stream-placeholder" class="embed-responsive-item d-none justify-content-center align-items-center">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="modal-footer flex-column justify-content-start d-none live-past" id="stream-info" data-time="">
+        <div class="my-0 small align-self-start live-time" id="stream-info-time" data-time=""></div>
+        <div class="pl-2 align-self-start" id="stream-info-color">
+          <p class="mb-0">
+            <a class="text-reset" href="#" id="stream-info-talk"></a>
+          </p>
+          <p class="font-weight-light mb-0" id="stream-info-speakers"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer justify-content-around"><a id="stream-button1" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room A">
+            Room A
+          </a><a id="stream-button2" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room B">
+            Room B
+          </a><a id="stream-button3" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room C">
+            Room C
+          </a>
+        <div class="form-group w-100 d-block d-sm-none">
+          <select class="form-control" id="stream-select"><option value="1" disabled>Room A</option><option value="2" disabled>Room B</option><option value="3" disabled>Room C</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Append build time to avoid caching of live program embedded in JavaScript file -->
+  <script src="/assets/js/main.js?t=1628003444"></script>
+
+</body>
 </html>
+
